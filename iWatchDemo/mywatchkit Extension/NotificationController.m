@@ -36,16 +36,23 @@
     [super didDeactivate];
 }
 
-/*
+
 - (void)didReceiveNotification:(UNNotification *)notification withCompletion:(void(^)(WKUserNotificationInterfaceType interface)) completionHandler {
     // This method is called when a notification needs to be presented.
     // Implement it if you use a dynamic notification interface.
     // Populate your dynamic notification interface as quickly as possible.
     //
     // After populating your dynamic notification interface call the completion block.
+    
+    NSLog(@"++++++didReceiveNotification++++++");
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
-*/
+
+
+- (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler{
+    
+    
+}
 
 @end
 

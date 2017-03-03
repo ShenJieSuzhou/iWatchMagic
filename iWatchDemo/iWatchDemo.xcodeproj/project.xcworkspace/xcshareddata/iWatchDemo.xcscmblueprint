@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "48114380C0CF22E2029229A9EAB10B917A2E6484",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "48114380C0CF22E2029229A9EAB10B917A2E6484" : 9223372036854775807,
+    "298A55A7662A612CAFCABA11009A6DFC1B829C6A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "98D55BD2-28C5-4BD5-BD74-2D7612E28EF6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "48114380C0CF22E2029229A9EAB10B917A2E6484" : "iWatchMagic\/",
+    "298A55A7662A612CAFCABA11009A6DFC1B829C6A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iWatchDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iWatchDemo\/iWatchDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShenJieSuzhou\/Friday.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "298A55A7662A612CAFCABA11009A6DFC1B829C6A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShenJieSuzhou\/iWatchMagic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48114380C0CF22E2029229A9EAB10B917A2E6484"
+    }
+  ]
+}

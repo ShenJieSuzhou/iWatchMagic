@@ -14,46 +14,103 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="测试" id="WYb-Vd-6E6">
-                            <color key="backgroundColor" red="1" green="0.46686608959999998" blue="0.045907259149999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <table alignment="left" id="rXb-HK-6Dh">
+                            <items>
+                                <tableRow identifier="MyTableRowControl" id="67r-mX-ayW" customClass="MyTableRowControl">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="DEj-X4-f1S">
+                                        <items>
+                                            <label alignment="left" text="Label" id="8bf-8X-zID"/>
+                                            <label alignment="left" text="Label" id="XDh-on-Ss6"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="contactName" destination="8bf-8X-zID" id="2xx-iF-ZOi"/>
+                                        <outlet property="phoneNo" destination="XDh-on-Ss6" id="2ex-6T-4ZW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView alignment="left" image="123" id="aUq-Xf-bx9"/>
+                        <timer alignment="left" id="xT7-Vg-nty"/>
+                        <button width="1" alignment="left" title="计时" id="6jd-h1-SJe">
+                            <color key="backgroundColor" red="0.22508115100000001" green="0.88722769930000001" blue="0.97021754140000005" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="setLabelText" destination="AgC-eL-Hgc" id="Kuv-mp-sBF"/>
+                                <action selector="countBtn" destination="AgC-eL-Hgc" id="GOf-R2-e7d"/>
                             </connections>
                         </button>
-                        <imageView alignment="left" id="R9O-E6-Ifg"/>
-                        <label alignment="left" text="1111111" id="IwU-nx-zlo"/>
+                        <dateLabel alignment="left" id="RDN-Zv-vcN">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                        <button width="1" alignment="left" title="设置" id="E8V-E4-zEL">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="setting" destination="AgC-eL-Hgc" id="men-UA-5i7"/>
+                            </connections>
+                        </button>
+                        <paymentButton width="1" alignment="left" id="HXj-sh-iv5"/>
+                        <switch width="1" alignment="left" value="YES" title="开关" id="fyS-Uq-d3I"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="za4-hG-Y7y"/>
+                        <group width="1" alignment="left" id="4hZ-QU-Pkx">
+                            <items>
+                                <label alignment="left" text="iphone" id="j0k-kO-JQQ"/>
+                                <label alignment="left" text="ipad" id="EAT-0O-7Q7"/>
+                                <label alignment="left" text="iwatch" id="yAW-Up-mc0"/>
+                            </items>
+                            <color key="backgroundColor" red="0.98566760040000001" green="0.27829055829999999" blue="0.18296999950000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
                     </items>
                     <connections>
-                        <outlet property="imageV" destination="R9O-E6-Ifg" id="hok-UU-EjV"/>
-                        <outlet property="startBtn" destination="WYb-Vd-6E6" id="50W-LC-xXt"/>
-                        <outlet property="textdesc" destination="IwU-nx-zlo" id="tcQ-wf-YTK"/>
+                        <outlet property="contactTableV" destination="rXb-HK-6Dh" id="CKi-0L-TfZ"/>
+                        <outlet property="date" destination="RDN-Zv-vcN" id="nhW-6S-Lwf"/>
+                        <outlet property="time" destination="xT7-Vg-nty" id="sPa-n0-TGj"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="203" y="342"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label height="20" alignment="left" text="test" id="IdU-wH-bcW"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="sashColor" red="1" green="0.46686608959999998" blue="0.045907259149999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="197" y="738"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <items>
+                        <table alignment="left" id="HOx-JU-qUG"/>
+                        <table alignment="left" id="6Xi-lu-m2R"/>
+                        <table alignment="left" id="yo1-wc-CIT"/>
+                        <table alignment="left" id="MZR-Ma-dHP"/>
+                        <label alignment="left" text="Label" id="V3W-1B-eUt"/>
+                        <label alignment="left" text="Label" id="mZx-Tt-G3j"/>
+                        <label alignment="left" text="Label" id="pzC-QQ-xeU"/>
+                        <label alignment="left" text="Label" id="nKX-Ij-jg8"/>
+                        <label alignment="left" text="Label" id="5Bk-Q6-H6c"/>
+                        <label alignment="left" text="Label" id="yMJ-f8-AyT"/>
+                        <label alignment="left" text="Label" id="b8l-t4-hi5"/>
+                        <label alignment="left" text="Label" id="0Md-xC-Aaa"/>
+                        <label alignment="left" text="Label" id="AFJ-Zm-QXk"/>
+                        <label alignment="left" text="Label" id="SLl-xg-llP"/>
+                        <table alignment="left" id="Kw4-sh-EdW"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="530" y="738"/>
         </scene>
     </scenes>
 </document>

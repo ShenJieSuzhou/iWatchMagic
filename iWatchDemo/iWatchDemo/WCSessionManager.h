@@ -10,4 +10,6 @@
 
 @interface WCSessionManager : NSObject
 
++ (WCSessionManager *)shareSession;
+
 @end

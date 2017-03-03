@@ -46,23 +46,6 @@
     } errorHandler:^(NSError * _Nonnull error) {
         NSLog(@"Error: %@", error);
     }];
-    
-//    if(session.paired){
-//        NSLog(@"paired");
-//    }
-//    
-//    if(session.watchAppInstalled){
-//        NSLog(@"watchAppInstalled");
-//    }
-//    
-//    if(session.complicationEnabled){
-//        NSLog(@"complicationEnabled");
-//    }
-//    
-//    if(session.reachable){
-//        NSLog(@"reachable");
-//    }
-   
 }
 
 - (void)session:(WCSession * __nonnull)session didFinishUserInfoTransfer:(WCSessionUserInfoTransfer *)userInfoTransfer error:(nullable NSError *)error{

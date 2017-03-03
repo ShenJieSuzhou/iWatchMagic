@@ -12,10 +12,44 @@
 
 @interface InterfaceController : WKInterfaceController<WCSessionDelegate>
 
+
+- (IBAction)setCusTime;
+
+- (IBAction)startTime;
+
+
 @property (strong, nonatomic) IBOutlet WKInterfaceButton *startBtn;
 
 @property (strong, nonatomic) IBOutlet WKInterfaceImage *imageV;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceLabel *textdesc;
 
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *textdesc;
+@property (strong, nonatomic) IBOutlet WKInterfaceTable *contactTableV;
+
+- (IBAction)countBtn;
+
+- (IBAction)setting;
+
+
+//@property (strong, nonatomic) IBOutlet WKInterfacePaymentButton *applePayBtn;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceSeparator *separte;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceSlider *slideBar;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceGroup *group;
+//
+@property (strong, nonatomic) IBOutlet WKInterfaceDate *date;
+//
+@property (strong, nonatomic) IBOutlet WKInterfaceTimer *time;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceButton *setting;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceButton *start;
+//
+//@property (assign) BOOL flag;
+//
+//@property (strong, nonatomic) IBOutlet WKInterfaceLabel *test;
+
 
 @end

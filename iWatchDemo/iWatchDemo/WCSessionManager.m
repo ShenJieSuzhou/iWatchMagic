@@ -10,4 +10,9 @@
 
 @implementation WCSessionManager
 
++ (WCSessionManager *)shareSession{
+    
+    return nil;
+}
+
 @end

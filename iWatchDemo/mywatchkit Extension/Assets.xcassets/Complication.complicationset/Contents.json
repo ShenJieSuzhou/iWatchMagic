@@ -11,6 +11,9 @@
       "role" : "extra-large"
     },
     {
+      "filename" : "Image.imageset"
+    },
+    {
       "idiom" : "watch",
       "filename" : "Modular.imageset",
       "role" : "modular"

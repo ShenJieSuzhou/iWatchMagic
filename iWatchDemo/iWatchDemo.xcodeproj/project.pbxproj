@@ -24,6 +24,9 @@
 		442F62201E5D39D000E0AB0F /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621E1E5D39D000E0AB0F /* 014.png */; };
 		442F62211E5D39D000E0AB0F /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621F1E5D39D000E0AB0F /* 123.png */; };
 		442F62241E5D6BDF00E0AB0F /* WCSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F62231E5D6BDF00E0AB0F /* WCSessionManager.m */; };
+		44F325991E6557440088CBD5 /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621E1E5D39D000E0AB0F /* 014.png */; };
+		44F3259A1E65574A0088CBD5 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621F1E5D39D000E0AB0F /* 123.png */; };
+		44F3261C1E690EAB0088CBD5 /* MyTableRowControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,8 @@
 		442F621F1E5D39D000E0AB0F /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		442F62221E5D6BDF00E0AB0F /* WCSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSessionManager.h; sourceTree = "<group>"; };
 		442F62231E5D6BDF00E0AB0F /* WCSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSessionManager.m; sourceTree = "<group>"; };
+		44F3261A1E690EAB0088CBD5 /* MyTableRowControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableRowControl.h; sourceTree = "<group>"; };
+		44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableRowControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,8 @@
 				442F62091E5D32D400E0AB0F /* ExtensionDelegate.m */,
 				442F620B1E5D32D400E0AB0F /* NotificationController.h */,
 				442F620C1E5D32D400E0AB0F /* NotificationController.m */,
+				44F3261A1E690EAB0088CBD5 /* MyTableRowControl.h */,
+				44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */,
 				442F620E1E5D32D400E0AB0F /* Assets.xcassets */,
 				442F62101E5D32D400E0AB0F /* Info.plist */,
 				442F62031E5D32D400E0AB0F /* Supporting Files */,
@@ -316,6 +323,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F3259A1E65574A0088CBD5 /* 123.png in Resources */,
+				44F325991E6557440088CBD5 /* 014.png in Resources */,
 				442F61F81E5D32D400E0AB0F /* Assets.xcassets in Resources */,
 				442F61F61E5D32D400E0AB0F /* Interface.storyboard in Resources */,
 			);
@@ -350,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442F620A1E5D32D400E0AB0F /* ExtensionDelegate.m in Sources */,
+				44F3261C1E690EAB0088CBD5 /* MyTableRowControl.m in Sources */,
 				442F62071E5D32D400E0AB0F /* InterfaceController.m in Sources */,
 				442F620D1E5D32D400E0AB0F /* NotificationController.m in Sources */,
 			);
@@ -492,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WSSN499SLU;
 				INFOPLIST_FILE = iWatchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -506,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WSSN499SLU;
 				INFOPLIST_FILE = iWatchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -607,6 +619,7 @@
 				442F61EF1E5D311A00E0AB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		442F62141E5D32D400E0AB0F /* Build configuration list for PBXNativeTarget "mywatchkit Extension" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +628,7 @@
 				442F62161E5D32D400E0AB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		442F62181E5D32D400E0AB0F /* Build configuration list for PBXNativeTarget "mywatchkit" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +637,7 @@
 				442F621A1E5D32D400E0AB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
