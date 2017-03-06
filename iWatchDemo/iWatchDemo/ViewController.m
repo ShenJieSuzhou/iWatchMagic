@@ -38,7 +38,7 @@
     
     WCSession *session = [WCSession defaultSession];
     
-    NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"张三",@"Name", nil];
+    NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"李四",@"Name", nil];
     
     [session sendMessage:dic replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
         NSLog(@"replay: %@", replyMessage);
@@ -53,25 +53,28 @@
 }
 
 - (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error __IOS_AVAILABLE(9.3) __WATCHOS_AVAILABLE(2.2){
-    NSLog(@"11111");
 }
 
 
 - (void)sessionDidBecomeInactive:(WCSession *)session __IOS_AVAILABLE(9.3) __WATCHOS_UNAVAILABLE{
-    NSLog(@"22222");
 }
 
 
 - (void)sessionDidDeactivate:(WCSession *)session __IOS_AVAILABLE(9.3) __WATCHOS_UNAVAILABLE{
-    NSLog(@"33333");
+    
 }
 
-- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message{
-    NSLog(@"444444");
-    NSLog(@"%@", message);
+
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler{
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        //回调或者说是通知主线程刷新，
+        [_textField setText:[message objectForKey:@"Name"]];
+    });
+    
+    NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"李四1111",@"Name", nil];
+    
+    replyHandler(dic);
 }
 
-- (void)session:(WCSession *)session didReceiveUserInfo:(NSDictionary<NSString *, id> *)userInfo{
-    NSLog(@"555555");
-}
 @end

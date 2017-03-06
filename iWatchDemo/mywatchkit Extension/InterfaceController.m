@@ -88,62 +88,34 @@
 
 }
 
-- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message{
-    NSLog(@"---------%@", message);
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler{
+    NSString *name = [message objectForKey:@"Name"];
+    [_nameLable setText:name];
 }
-
-- (void)session:(WCSession *)session didReceiveUserInfo:(NSDictionary<NSString *, id> *)userInfo{
-    NSLog(@"---------%@", userInfo);
-    
-    NSString *name = [userInfo objectForKey:@"Name"];
-//    [_textdesc setText:name];
-}
-
-//- (IBAction)setCusTime {
-//    //设置时区
-////    NSTimeZone *zone = [NSTimeZone defaultTimeZone];
-////    [_date setTimeZone:zone];
-////    
-////    NSCalendar *calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierBuddhist];
-////    [_date setCalendar:calendar];
-//    
-////    NSCalendar *calender = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-//
-////    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithName:@"UTC"];
-////
-////    NSLog(@"%@", sourceTimeZone);
-////    
-////    [_date setTimeZone:zone];
-////    NSLog(@"111");
-////    
-//    [_test setText:@"11111"];
-//}
-//
-//- (IBAction)startTime {
-//    if(!_flag){
-//        [_time start];
-//        _flag = YES;
-//        [_start setTitle:@"停止"];
-//    }else{
-//        [_time stop];
-//        [_start setTitle:@"开始"];
-////        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-////        [formatter setDateFormat:@"HH:mm:ss"];
-////        NSDate *newDate = [formatter dateFromString:@"0:00:00"];
-////        [_time setDate:newDate];
-//        _flag = NO;
-//    }
-//}
 
 - (IBAction)countBtn {
-    [_time start];
-//    [_time stop];
+    
+    WCSession *session = [WCSession defaultSession];
+
+    NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:@"张三",@"Name", nil];
+
+    [session sendMessage:dic replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+        NSLog(@"replay: %@", replyMessage);
+
+    } errorHandler:^(NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 - (IBAction)setting {
     NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithName:@"UTC"];
     [_date setTimeZone:sourceTimeZone];
 }
+
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex{
+    NSLog(@"我点击了 %ld 行", (long)rowIndex);
+}
+
 @end
 
 

@@ -51,5 +51,6 @@
 //
 //@property (strong, nonatomic) IBOutlet WKInterfaceLabel *test;
 
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *nameLable;
 
 @end

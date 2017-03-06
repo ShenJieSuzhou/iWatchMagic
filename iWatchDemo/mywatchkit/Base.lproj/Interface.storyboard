@@ -32,7 +32,8 @@
                         </table>
                         <imageView alignment="left" image="123" id="aUq-Xf-bx9"/>
                         <timer alignment="left" id="xT7-Vg-nty"/>
-                        <button width="1" alignment="left" title="计时" id="6jd-h1-SJe">
+                        <label alignment="left" text="123" id="fHb-J8-RrK"/>
+                        <button width="1" alignment="left" title="发送" id="6jd-h1-SJe">
                             <color key="backgroundColor" red="0.22508115100000001" green="0.88722769930000001" blue="0.97021754140000005" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="countBtn" destination="AgC-eL-Hgc" id="GOf-R2-e7d"/>
@@ -63,6 +64,7 @@
                     <connections>
                         <outlet property="contactTableV" destination="rXb-HK-6Dh" id="CKi-0L-TfZ"/>
                         <outlet property="date" destination="RDN-Zv-vcN" id="nhW-6S-Lwf"/>
+                        <outlet property="nameLable" destination="fHb-J8-RrK" id="bAM-DK-QZ2"/>
                         <outlet property="time" destination="xT7-Vg-nty" id="sPa-n0-TGj"/>
                     </connections>
                 </controller>
