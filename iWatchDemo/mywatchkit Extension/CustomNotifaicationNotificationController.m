@@ -1,20 +1,18 @@
 //
-//  NotificationController.m
-//  mywatchkit Extension
+//  CustomNotifaicationNotificationController.m
+//  iWatchDemo
 //
-//  Created by silicon on 17/2/22.
+//  Created by silicon on 17/3/7.
 //  Copyright © 2017年 com.snailgames. All rights reserved.
 //
 
-#import "NotificationController.h"
+#import "CustomNotifaicationNotificationController.h"
 
-
-@interface NotificationController()
+@interface CustomNotifaicationNotificationController ()
 
 @end
 
-
-@implementation NotificationController
+@implementation CustomNotifaicationNotificationController
 
 - (instancetype)init {
     self = [super init];
@@ -41,14 +39,21 @@
 //    // This method is called when a notification needs to be presented.
 //    // Implement it if you use a dynamic notification interface.
 //    // Populate your dynamic notification interface as quickly as possible.
-//    //
+//    
+////    [_title setText:notification.request.title];
+//    
 //    // After populating your dynamic notification interface call the completion block.
-//    
-//    notificat
-//    
-//    NSLog(@"++++++didReceiveNotification++++++");
 //    completionHandler(WKUserNotificationInterfaceTypeCustom);
 //}
+
+- (void)didReceiveLocalNotification:(UILocalNotification *)localNotification
+                     withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler{
+ 
+    [_title setText:localNotification.alertTitle];
+    [_subTitle setText:localNotification.alertTitle];
+    
+    completionHandler(WKUserNotificationInterfaceTypeCustom);
+}
 
 
 @end

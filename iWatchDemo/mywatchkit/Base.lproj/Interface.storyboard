@@ -87,32 +87,28 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="197" y="738"/>
+            <point key="canvasLocation" x="217" y="823"/>
         </scene>
-        <!--Notification Controller-->
+        <!--Custom Notifaication Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController">
+                <controller id="4sK-HA-Art" customClass="CustomNotifaicationNotificationController">
                     <items>
                         <table alignment="left" id="HOx-JU-qUG"/>
                         <table alignment="left" id="6Xi-lu-m2R"/>
                         <table alignment="left" id="yo1-wc-CIT"/>
                         <table alignment="left" id="MZR-Ma-dHP"/>
-                        <label alignment="left" text="Label" id="V3W-1B-eUt"/>
-                        <label alignment="left" text="Label" id="mZx-Tt-G3j"/>
-                        <label alignment="left" text="Label" id="pzC-QQ-xeU"/>
-                        <label alignment="left" text="Label" id="nKX-Ij-jg8"/>
-                        <label alignment="left" text="Label" id="5Bk-Q6-H6c"/>
-                        <label alignment="left" text="Label" id="yMJ-f8-AyT"/>
-                        <label alignment="left" text="Label" id="b8l-t4-hi5"/>
-                        <label alignment="left" text="Label" id="0Md-xC-Aaa"/>
                         <label alignment="left" text="Label" id="AFJ-Zm-QXk"/>
                         <label alignment="left" text="Label" id="SLl-xg-llP"/>
                         <table alignment="left" id="Kw4-sh-EdW"/>
                     </items>
+                    <connections>
+                        <outlet property="subTitle" destination="SLl-xg-llP" id="Q6f-um-CDN"/>
+                        <outlet property="title" destination="AFJ-Zm-QXk" id="DjP-ZX-JT5"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="530" y="738"/>
+            <point key="canvasLocation" x="522" y="823"/>
         </scene>
     </scenes>
 </document>

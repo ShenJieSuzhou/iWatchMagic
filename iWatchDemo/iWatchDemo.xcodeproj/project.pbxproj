@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440C919B1E76764700F23C31 /* WatchSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 440C919A1E76764700F23C31 /* WatchSessionManager.m */; };
 		442F61DB1E5D311A00E0AB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F61DA1E5D311A00E0AB0F /* main.m */; };
 		442F61DE1E5D311A00E0AB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F61DD1E5D311A00E0AB0F /* AppDelegate.m */; };
 		442F61E11E5D311A00E0AB0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F61E01E5D311A00E0AB0F /* ViewController.m */; };
@@ -27,6 +28,7 @@
 		44F325991E6557440088CBD5 /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621E1E5D39D000E0AB0F /* 014.png */; };
 		44F3259A1E65574A0088CBD5 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621F1E5D39D000E0AB0F /* 123.png */; };
 		44F3261C1E690EAB0088CBD5 /* MyTableRowControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */; };
+		44F3261F1E6E94990088CBD5 /* CustomNotifaicationNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F3261E1E6E94990088CBD5 /* CustomNotifaicationNotificationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		440C91991E76764700F23C31 /* WatchSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchSessionManager.h; sourceTree = "<group>"; };
+		440C919A1E76764700F23C31 /* WatchSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchSessionManager.m; sourceTree = "<group>"; };
 		442F61D61E5D311A00E0AB0F /* iWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442F61DA1E5D311A00E0AB0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		442F61DC1E5D311A00E0AB0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		442F62231E5D6BDF00E0AB0F /* WCSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSessionManager.m; sourceTree = "<group>"; };
 		44F3261A1E690EAB0088CBD5 /* MyTableRowControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableRowControl.h; sourceTree = "<group>"; };
 		44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableRowControl.m; sourceTree = "<group>"; };
+		44F3261D1E6E94990088CBD5 /* CustomNotifaicationNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNotifaicationNotificationController.h; sourceTree = "<group>"; };
+		44F3261E1E6E94990088CBD5 /* CustomNotifaicationNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNotifaicationNotificationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,9 +195,13 @@
 				442F620C1E5D32D400E0AB0F /* NotificationController.m */,
 				44F3261A1E690EAB0088CBD5 /* MyTableRowControl.h */,
 				44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */,
+				44F3261D1E6E94990088CBD5 /* CustomNotifaicationNotificationController.h */,
+				44F3261E1E6E94990088CBD5 /* CustomNotifaicationNotificationController.m */,
 				442F620E1E5D32D400E0AB0F /* Assets.xcassets */,
 				442F62101E5D32D400E0AB0F /* Info.plist */,
 				442F62031E5D32D400E0AB0F /* Supporting Files */,
+				440C91991E76764700F23C31 /* WatchSessionManager.h */,
+				440C919A1E76764700F23C31 /* WatchSessionManager.m */,
 			);
 			path = "mywatchkit Extension";
 			sourceTree = "<group>";
@@ -360,8 +370,10 @@
 			files = (
 				442F620A1E5D32D400E0AB0F /* ExtensionDelegate.m in Sources */,
 				44F3261C1E690EAB0088CBD5 /* MyTableRowControl.m in Sources */,
+				440C919B1E76764700F23C31 /* WatchSessionManager.m in Sources */,
 				442F62071E5D32D400E0AB0F /* InterfaceController.m in Sources */,
 				442F620D1E5D32D400E0AB0F /* NotificationController.m in Sources */,
+				44F3261F1E6E94990088CBD5 /* CustomNotifaicationNotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
