@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		440C919B1E76764700F23C31 /* WatchSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 440C919A1E76764700F23C31 /* WatchSessionManager.m */; };
+		442914051EB9B6470044C75A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442914041EB9B6470044C75A /* CoreLocation.framework */; };
 		442F61DB1E5D311A00E0AB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F61DA1E5D311A00E0AB0F /* main.m */; };
 		442F61DE1E5D311A00E0AB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F61DD1E5D311A00E0AB0F /* AppDelegate.m */; };
 		442F61E11E5D311A00E0AB0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F61E01E5D311A00E0AB0F /* ViewController.m */; };
@@ -25,6 +26,10 @@
 		442F62201E5D39D000E0AB0F /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621E1E5D39D000E0AB0F /* 014.png */; };
 		442F62211E5D39D000E0AB0F /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621F1E5D39D000E0AB0F /* 123.png */; };
 		442F62241E5D6BDF00E0AB0F /* WCSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F62231E5D6BDF00E0AB0F /* WCSessionManager.m */; };
+		44B100FD1EB9D87A00E385EF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B100FC1EB9D87A00E385EF /* HealthKit.framework */; };
+		44B101021EB9DE9C00E385EF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B101011EB9DE9C00E385EF /* HealthKit.framework */; };
+		44B101041EBAC46600E385EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B101031EBAC46600E385EF /* CoreLocation.framework */; };
+		44B101071EBAC4C300E385EF /* WWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B101061EBAC4C300E385EF /* WWLocationManager.m */; };
 		44F325991E6557440088CBD5 /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621E1E5D39D000E0AB0F /* 014.png */; };
 		44F3259A1E65574A0088CBD5 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 442F621F1E5D39D000E0AB0F /* 123.png */; };
 		44F3261C1E690EAB0088CBD5 /* MyTableRowControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */; };
@@ -76,6 +81,7 @@
 /* Begin PBXFileReference section */
 		440C91991E76764700F23C31 /* WatchSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchSessionManager.h; sourceTree = "<group>"; };
 		440C919A1E76764700F23C31 /* WatchSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchSessionManager.m; sourceTree = "<group>"; };
+		442914041EB9B6470044C75A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		442F61D61E5D311A00E0AB0F /* iWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442F61DA1E5D311A00E0AB0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		442F61DC1E5D311A00E0AB0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +110,11 @@
 		442F621F1E5D39D000E0AB0F /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		442F62221E5D6BDF00E0AB0F /* WCSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSessionManager.h; sourceTree = "<group>"; };
 		442F62231E5D6BDF00E0AB0F /* WCSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSessionManager.m; sourceTree = "<group>"; };
+		44B100FC1EB9D87A00E385EF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		44B101011EB9DE9C00E385EF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		44B101031EBAC46600E385EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		44B101051EBAC4C300E385EF /* WWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWLocationManager.h; sourceTree = "<group>"; };
+		44B101061EBAC4C300E385EF /* WWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWLocationManager.m; sourceTree = "<group>"; };
 		44F3261A1E690EAB0088CBD5 /* MyTableRowControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableRowControl.h; sourceTree = "<group>"; };
 		44F3261B1E690EAB0088CBD5 /* MyTableRowControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableRowControl.m; sourceTree = "<group>"; };
 		44F3261D1E6E94990088CBD5 /* CustomNotifaicationNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNotifaicationNotificationController.h; sourceTree = "<group>"; };
@@ -115,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B101041EBAC46600E385EF /* CoreLocation.framework in Frameworks */,
+				44B101021EB9DE9C00E385EF /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,12 +135,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B100FD1EB9D87A00E385EF /* HealthKit.framework in Frameworks */,
+				442914051EB9B6470044C75A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442914031EB9B6460044C75A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B101031EBAC46600E385EF /* CoreLocation.framework */,
+				44B101011EB9DE9C00E385EF /* HealthKit.framework */,
+				44B100FC1EB9D87A00E385EF /* HealthKit.framework */,
+				442914041EB9B6470044C75A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		442F61CD1E5D311A00E0AB0F = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +161,7 @@
 				442F61F31E5D32D400E0AB0F /* mywatchkit */,
 				442F62021E5D32D400E0AB0F /* mywatchkit Extension */,
 				442F61D71E5D311A00E0AB0F /* Products */,
+				442914031EB9B6460044C75A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +184,8 @@
 				442F61E01E5D311A00E0AB0F /* ViewController.m */,
 				442F62221E5D6BDF00E0AB0F /* WCSessionManager.h */,
 				442F62231E5D6BDF00E0AB0F /* WCSessionManager.m */,
+				44B101051EBAC4C300E385EF /* WWLocationManager.h */,
+				44B101061EBAC4C300E385EF /* WWLocationManager.m */,
 				442F61E21E5D311A00E0AB0F /* Main.storyboard */,
 				442F61E51E5D311A00E0AB0F /* Assets.xcassets */,
 				442F61E71E5D311A00E0AB0F /* LaunchScreen.storyboard */,
@@ -285,6 +314,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WSSN499SLU;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					442F61F11E5D32D400E0AB0F = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -359,6 +393,7 @@
 			files = (
 				442F61E11E5D311A00E0AB0F /* ViewController.m in Sources */,
 				442F61DE1E5D311A00E0AB0F /* AppDelegate.m in Sources */,
+				44B101071EBAC4C300E385EF /* WWLocationManager.m in Sources */,
 				442F62241E5D6BDF00E0AB0F /* WCSessionManager.m in Sources */,
 				442F61DB1E5D311A00E0AB0F /* main.m in Sources */,
 			);

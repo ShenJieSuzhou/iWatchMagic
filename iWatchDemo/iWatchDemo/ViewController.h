@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <WatchConnectivity/WatchConnectivity.h>
+#import "WWLocationManager.h"
+
 
 @interface ViewController : UIViewController<WCSessionDelegate>
 

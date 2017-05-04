@@ -23,6 +23,8 @@
         session.delegate = self;
         [session activateSession];
     }
+    
+//    [[WWLocationManager sharedManager] startLocation];
 }
 
 
@@ -65,7 +67,8 @@
 }
 
 
-- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler{
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message
+   replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler{
     
     dispatch_async(dispatch_get_main_queue(), ^{
         //回调或者说是通知主线程刷新，

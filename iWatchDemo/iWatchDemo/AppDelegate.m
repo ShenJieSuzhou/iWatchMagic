@@ -32,6 +32,22 @@
     
     [self registerNotification:60];
     
+    if (![CLLocationManager locationServicesEnabled]) {
+//        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Location Services Disabled", nil)
+//                                    message:NSLocalizedString(@"You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled.", nil)
+//                                   delegate:nil
+//                          cancelButtonTitle:NSLocalizedString(@"OK", nil)
+//                          otherButtonTitles:nil] show];
+//        
+//        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Location Services Disabled", nil) message:NSLocalizedString(@"You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled.", nil) preferredStyle:UIAlertControllerStyleAlert];
+        
+        NSLog(NSLocalizedString(@"You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled.", nil));
+    } else {
+        [[WWLocationManager sharedManager] start];
+    }
+    
+
+    
     return YES;
 }
 
@@ -87,7 +103,9 @@
 
 #pragma mark - UNUserNotificationCenterDelegate
 //在展示通知前进行处理，即有机会在展示通知前再修改通知内容。
--(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center
+      willPresentNotification:(UNNotification *)notification
+
         withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
     //1. 处理通知
     

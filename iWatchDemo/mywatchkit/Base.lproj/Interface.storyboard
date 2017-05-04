@@ -14,62 +14,28 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <table alignment="left" id="rXb-HK-6Dh">
+                        <table alignment="left" id="rXb-HK-6Dh"/>
+                        <group width="1" height="84" alignment="left" id="rZY-Lp-B8o">
                             <items>
-                                <tableRow identifier="MyTableRowControl" id="67r-mX-ayW" customClass="MyTableRowControl">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="DEj-X4-f1S">
-                                        <items>
-                                            <label alignment="left" text="Label" id="8bf-8X-zID"/>
-                                            <label alignment="left" text="Label" id="XDh-on-Ss6"/>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="contactName" destination="8bf-8X-zID" id="2xx-iF-ZOi"/>
-                                        <outlet property="phoneNo" destination="XDh-on-Ss6" id="2ex-6T-4ZW"/>
-                                    </connections>
-                                </tableRow>
+                                <imageView height="78" alignment="left" id="Y2A-dt-4in"/>
                             </items>
-                        </table>
-                        <imageView alignment="left" image="123" id="aUq-Xf-bx9"/>
-                        <timer alignment="left" id="xT7-Vg-nty"/>
-                        <label alignment="left" text="123" id="fHb-J8-RrK"/>
-                        <button width="1" alignment="left" title="发送" id="6jd-h1-SJe">
+                        </group>
+                        <button width="1" alignment="left" title="Button" id="To5-uf-OTJ">
                             <color key="backgroundColor" red="0.22508115100000001" green="0.88722769930000001" blue="0.97021754140000005" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="countBtn" destination="AgC-eL-Hgc" id="GOf-R2-e7d"/>
+                                <action selector="playAnimate" destination="AgC-eL-Hgc" id="khh-JE-2hY"/>
                             </connections>
                         </button>
-                        <dateLabel alignment="left" id="RDN-Zv-vcN">
-                            <dateFormatterStyle key="dateStyle" short="YES"/>
-                            <dateFormatterStyle key="timeStyle" short="YES"/>
-                        </dateLabel>
-                        <button width="1" alignment="left" title="设置" id="E8V-E4-zEL">
-                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="setting" destination="AgC-eL-Hgc" id="men-UA-5i7"/>
-                            </connections>
-                        </button>
-                        <paymentButton width="1" alignment="left" id="HXj-sh-iv5"/>
-                        <switch width="1" alignment="left" value="YES" title="开关" id="fyS-Uq-d3I"/>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="za4-hG-Y7y"/>
-                        <group width="1" alignment="left" id="4hZ-QU-Pkx">
-                            <items>
-                                <label alignment="left" text="iphone" id="j0k-kO-JQQ"/>
-                                <label alignment="left" text="ipad" id="EAT-0O-7Q7"/>
-                                <label alignment="left" text="iwatch" id="yAW-Up-mc0"/>
-                            </items>
-                            <color key="backgroundColor" red="0.98566760040000001" green="0.27829055829999999" blue="0.18296999950000001" alpha="1" colorSpace="calibratedRGB"/>
-                        </group>
                     </items>
                     <connections>
+                        <outlet property="animateGroup" destination="rZY-Lp-B8o" id="Lxh-p7-bDN"/>
                         <outlet property="contactTableV" destination="rXb-HK-6Dh" id="CKi-0L-TfZ"/>
-                        <outlet property="date" destination="RDN-Zv-vcN" id="nhW-6S-Lwf"/>
-                        <outlet property="nameLable" destination="fHb-J8-RrK" id="bAM-DK-QZ2"/>
-                        <outlet property="time" destination="xT7-Vg-nty" id="sPa-n0-TGj"/>
+                        <outlet property="dymaticImage" destination="Y2A-dt-4in" id="yhR-Mm-bg5"/>
+                        <segue destination="LxE-qT-iL3" kind="relationship" relationship="nextPage" id="MjT-1h-cFo"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="203" y="342"/>
+            <point key="canvasLocation" x="217" y="557"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -88,6 +54,19 @@
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="217" y="823"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="e5f-BD-llB">
+            <objects>
+                <controller id="LxE-qT-iL3">
+                    <items>
+                        <imageView height="75" alignment="left" id="1Ed-QV-RNm"/>
+                        <button width="1" alignment="left" title="Button" id="FRS-XD-ghP"/>
+                    </items>
+                    <color key="backgroundColor" red="0.22508115100000001" green="0.88722769930000001" blue="0.97021754140000005" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="491" y="557"/>
         </scene>
         <!--Custom Notifaication Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
